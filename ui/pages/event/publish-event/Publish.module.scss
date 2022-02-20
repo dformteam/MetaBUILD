@@ -1,0 +1,422 @@
+.root {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+}
+
+.publish_content {
+    width: 100%;
+    max-width: 900px;
+    min-width: 400px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    background: var(--color-background);
+    box-shadow: var(--color-boxshadow);
+    padding: 32px;
+}
+
+.publish_title {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.publish_title_text {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.publish_title_status {
+    margin-left: 20px;
+}
+
+.publish_title_button {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    background: rgb(255, 237, 209);
+    border-color: rgb(243, 143, 50);
+    color: rgb(241, 127, 21);
+}
+
+.publish_title_button_public {
+    @extend .publish_title_button;
+    background-color: rgba(120, 187, 7, 0.1);
+    border: 1px solid rgb(120, 187, 7);
+    color: rgb(120, 187, 7);
+}
+
+.publish_title_button_share {
+    @extend .publish_title_button;
+    background-color: rgb(237, 242, 255);
+    border: 1px solid rgba(66, 119, 255, 0.53);
+    color: rgb(66, 119, 255);
+}
+
+.publish_button_area {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.publish_button {
+    width: 150px;
+    height: 48px;
+    padding: 0 20px;
+    background: var(--color-gradient);
+    color: var(--color-text-button);
+}
+
+.publish_share_label {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.icon_lock {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.publish_row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+    position: relative;
+}
+
+.publish_icon_link {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15px;
+}
+
+.publish_link_input {
+    flex: 1;
+    height: 40px;
+    border-radius: 24px;
+    border: 1px solid var(--color-border);
+    padding: 0 10px 0 45px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.publish_link_copy {
+    color: var(--color-link);
+    margin: 0 0 0 5%;
+    cursor: pointer;
+}
+
+.publish_link_copy:hover {
+    text-decoration: underline;
+}
+
+.publish_status_content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 24px;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+}
+
+.publish_status_content_active_public {
+    background-color: rgba(120, 187, 7, 0.1);
+    border: 1px solid rgb(120, 187, 7);
+    color: rgb(120, 187, 7);
+}
+
+.publish_status_content_active_private {
+    background: rgb(255, 237, 209);
+    border-color: rgb(243, 143, 50);
+    color: rgb(241, 127, 21);
+}
+
+.publish_status_content_active_share {
+    background-color: rgb(237, 242, 255);
+    border: 1px solid rgba(66, 119, 255, 0.53);
+    color: rgb(66, 119, 255);
+}
+
+.publish_status_title {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.publish_status_sub {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.publish_icon_check {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+}
+
+.publish_invite {
+    @extend .publish_status_title;
+    margin-top: 40px;
+}
+
+.publish_invite_content {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+.publish_invite_email_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.publish_invite_label {
+    margin: 0 20px 0 10px;
+}
+
+.publish_invite_input {
+    flex: 1;
+    height: 40px;
+}
+
+.publish_invite_onfocus {
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.publish_invite_message {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    margin-top: 10px;
+    resize: none;
+    overflow: hidden;
+}
+
+.publish_invite_row_button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.publish_invite_button {
+    width: 200px;
+    height: 48px;
+    border: 1px solid var(--color-border);
+    color: var(--color-secondary);
+    margin: 0 10px;
+}
+
+.publish_invite_button_send {
+    @extend .publish_invite_button;
+    background: var(--color-gradient);
+    border: none;
+    color: var(--color-text-button);
+}
+
+.publish_modal_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.publish_modal_row {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.publish_modal_label {
+    width: 120px;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+.publish_modal_input {
+    flex: 1;
+    height: 40px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.publish_modal_textarea {
+    flex: 1;
+    border: 1px solid var(--color-border);
+    resize: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.publish_modal_button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid var(--color-border);
+    color: var(--color-secondary);
+    margin: 0 10px;
+}
+
+.publish_modal_button_share {
+    @extend .publish_modal_button;
+    background: var(--color-gradient);
+    border: none;
+    color: var(--color-text-button);
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-border), transparent);
+    margin: 20px 0 0;
+}
+
+.margin_top {
+    margin-top: 40px !important;
+}
+
+.publish_fee_row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.publish_fee_label {
+    width: 150px;
+}
+
+.publish_fee_input {
+    flex: 1;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    padding: 0 10px;
+    margin-left: -10px;
+}
+
+.publish_fee_button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    margin-right: 20px;
+}
+
+.publish_fee_button_active {
+    @extend .publish_fee_button;
+    background: var(--color-gradient);
+    color: var(--color-text-button);
+    border: none;
+}
+
+.publish_fee_label_paid {
+    margin: 0 20px 0 50px;
+}
+
+.publish_fee_input_date {
+    flex: 1;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    padding: 0 10px;
+    min-width: 250px;
+}
+
+.publish_row_input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.5s;
+    margin-top: 10px;
+}
+
+.publish_black_input {
+    flex: 1;
+    min-width: 200px;
+    height: 44px;
+    padding: 0 15px;
+    margin: 20px 10px 0 0;
+    border: 1px solid var(--color-border);
+}
+
+.publish_black_button {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    color: var(--color-danger);
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+}
+
+.publish_white_button {
+    @extend .publish_black_button;
+    color: rgb(120, 187, 7);
+}
+
+.publish_black_button:hover {
+    text-decoration: underline;
+}
+
+.list {
+    // flex: 1;
+    width: 20%;
+    min-width: 345px;
+    border-radius: 24px;
+    background: var(--color-background);
+    box-shadow: var(--color-boxshadow);
+    margin-left: 10px;
+    padding: 20px;
+
+    &_label {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &_content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 0 40px;
+    }
+
+    &_nothing {
+        width: 100%;
+        min-height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-secondary);
+    }
+}

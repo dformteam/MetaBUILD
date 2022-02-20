@@ -1,0 +1,15 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__error {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    &__content {
+        font-size: 20px;
+    }
+}

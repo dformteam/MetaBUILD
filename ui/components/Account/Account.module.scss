@@ -1,0 +1,145 @@
+.root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn_area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.signIn_button {
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px;
+    background: var(--color-gradient);
+    box-shadow: var(--color-boxshadow);
+    color: var(--color-text-button);
+}
+
+.signIn_button:hover {
+    cursor: pointer;
+}
+
+.signOut_area {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fcfcfd;
+}
+
+.signOut_button {
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 30px 15px;
+    background-color: #0072ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.account_button {
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    background: var(--color-gradient);
+    color: var(--color-text-button);
+    box-shadow: var(--color-boxshadow);
+}
+
+.account_button_icon_area {
+    display: flex;
+    align-items: center;
+}
+
+.account_button_icon {
+    font-size: 28px !important;
+}
+
+.account_button_accountId_area {
+    font-size: 17px;
+    margin-left: 5px;
+    flex: 1;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.account_button_drop_icon {
+    font-size: 28px !important;
+}
+
+.signOut_button_icon {
+    font-size: 32px;
+    color: white;
+}
+
+.signOut_button_content {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-left: 5px;
+}
+
+.account_popover {
+    width: 300px;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    box-shadow: var(--color-boxshadow);
+}
+
+.account_popover::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    transform: rotateZ(45deg);
+    background: #fff;
+}
+
+.account_popover_label {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.account_popover_label:hover {
+    color: var(--color-link);
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-border), transparent);
+}
+
+.account_popover_icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

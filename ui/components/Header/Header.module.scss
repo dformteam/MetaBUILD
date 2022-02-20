@@ -1,0 +1,95 @@
+.root {
+    width: 100%;
+    height: 100%;
+    padding: 20px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--color-boxshadow);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo_icon {
+    width: 70px;
+}
+
+.logo_lnc {
+    width: 55px;
+    height: 34px;
+    position: relative;
+    margin: 0 5px;
+}
+
+.logo_text {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    margin-right: 80px;
+}
+
+.logo_dot {
+    color: var(--color-active);
+    margin-left: 2px;
+    padding-top: 4px;
+    width: 10px !important;
+}
+
+.line {
+    width: 2px;
+    height: 24px;
+    margin: 5px 10px;
+    background: var(--color-border);
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.explore > span {
+    margin-right: 8px;
+}
+
+.explore:hover {
+    color: var(--color-link);
+}
+
+.arrow_down {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.nav_item {
+    max-width: 250px;
+}
+
+.nav_item + .nav_item {
+    margin-left: 25px;
+}
+
+.account {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.language {
+    @extend .explore;
+    margin-right: 24px;
+}
+
+.language > span {
+    margin-left: 12px;
+}

@@ -1,0 +1,73 @@
+.root_long_text {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.long_text_content {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.long_text_title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.long_text_title > span {
+    font-size: 24px;
+    color: var(--color-danger);
+    margin-left: 5px;
+}
+
+.long_text_description {
+    width: 80%;
+    height: 30px;
+    margin: 5px 10%;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.long_text {
+    width: 80%;
+    margin: 20px 10%;
+    display: flex;
+}
+
+.long_text_form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.long_text_label {
+    margin: 15px 0 5px;
+}
+
+.long_text_input {
+    width: 100%;
+    min-height: 120px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    border: 1px solid var(--color-border);
+    resize: none;
+}
+
+.long_text_require {
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    margin: 10px 10% 0;
+}
+
+.text_error {
+    font-size: 15px;
+    color: var(--color-danger);
+    margin: 0 0 20px;
+}

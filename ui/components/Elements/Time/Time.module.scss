@@ -1,0 +1,79 @@
+.root_time {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time_content {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.time_title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.time_title > span {
+    font-size: 24px;
+    color: var(--color-danger);
+    margin-left: 5px;
+}
+
+.time_description {
+    width: 80%;
+    height: 30px;
+    margin: 5px 10%;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.time {
+    width: 80%;
+    margin: 20px 10%;
+    display: flex;
+}
+
+.time_form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.time_label {
+    margin: 15px 0 5px;
+}
+
+.time_input {
+    width: 100%;
+    height: 48px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    border: 1px solid var(--color-border);
+}
+
+.time_require {
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    margin: 10px 10% 0;
+}
+
+.text_error {
+    font-size: 15px;
+    color: var(--color-danger);
+    margin: 0 0 20px;
+}
+
+
+.text_error {
+    font-size: 15px;
+    color: var(--color-danger);
+    margin: 0 10% 40px;
+}

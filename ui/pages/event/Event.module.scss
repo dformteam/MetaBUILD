@@ -1,0 +1,325 @@
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.label_create {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button_create {
+    width: 200px;
+    height: 48px;
+    border-radius: 24px;
+    background: var(--color-gradient);
+    color: var(--color-text-button);
+    margin: 2.5% auto;
+}
+
+.label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    margin-top: 2.5%;
+    padding: 0 10px 8px;
+}
+
+.label_title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search_row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.search_area {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.input_search {
+    width: 200px;
+    height: 48px;
+    margin-left: 20px;
+}
+
+.search_icon {
+    width: 48px !important;
+    height: 48px !important;
+    padding: 12px;
+}
+
+.input_location {
+    width: 180px;
+    height: 48px;
+    margin-left: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.button_select {
+    width: 180px;
+    height: 48px;
+    margin-left: 20px;
+    border-radius: 8px !important;
+}
+
+.button_search {
+    width: 120px;
+    height: 48px;
+    margin-left: 40px;
+    border-radius: 24px;
+    background: var(--color-gradient);
+    color: var(--color-text-button);
+}
+
+.label_text {
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.label_text:hover {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+.icon_collapse {
+    margin-left: 5px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: var(--color-border);
+}
+
+.list_event {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.event_item {
+    width: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: var(--color-background);
+    box-shadow: var(--color-boxshadow);
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.event_item:hover {
+    transform: scale(1.05);
+}
+
+.event_item_header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.event_item_type {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 8px;
+    padding: 5px 20px;
+    font-size: 14px;
+    background: var(--color-gradient);
+    box-shadow: var(--color-boxshadow);
+    color: var(--color-text-button);
+}
+
+.event_item_img {
+    width: 120px;
+    height: 80px;
+    margin: 10px auto;
+    border-radius: 8px;
+    background: #cae6f7;
+    box-shadow: var(--color-boxshadow);
+    object-fit: cover;
+}
+
+.event_item_info {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.event_item_date {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event_item_name {
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.event_item_footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.event_item_attendees {
+    flex: 1;
+}
+
+.event_item_icon {
+    margin-left: 10px;
+    color: var(--color-active) !important;
+}
+
+.event_item_icon_favor {
+    @extend .event_item_icon;
+    color: var(--color-danger) !important;
+}
+
+.attend_event {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background: var(--color-background);
+    box-shadow: var(--color-boxshadow);
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.attend_item_header {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid var(--color-border);
+}
+
+.attend_item_type {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 5px 20px;
+    font-size: 14px;
+    background: var(--color-gradient);
+    box-shadow: var(--color-boxshadow);
+    color: var(--color-text-button);
+}
+
+.attend_item_img {
+    width: 80px;
+    height: 80px;
+    flex: 1;
+    margin: 20px auto;
+    box-shadow: var(--color-boxshadow);
+    border-radius: 8px;
+    background: #cae6f7;
+}
+
+.attend_item_info {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.attend_item_date {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.attend_item_name {
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0;
+}
+
+.attend_item_footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.attend_item_icon {
+    font-size: 32px !important;
+    margin-left: 10px;
+    color: var(--color-active) !important;
+    cursor: pointer;
+}
+
+.attending {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(120, 187, 7, 0.1);
+    border: 1px solid rgb(120, 187, 7);
+    color: rgb(120, 187, 7);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.attending_icon {
+    margin-right: 10px;
+}
+
+.line_gradient {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-border), transparent);
+}
+
+.attend_event_nothing {
+    margin: 20px 0 30px;
+    color: var(--color-secondary);
+    font-style: italic;
+}

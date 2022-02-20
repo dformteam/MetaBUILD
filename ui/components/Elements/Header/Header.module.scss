@@ -1,0 +1,33 @@
+.root_header {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_content {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading_input {
+    width: 80%;
+    height: 48px;
+    margin: 5px 10%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.subheader_input {
+    @extend .heading_input;
+    font-size: 16px;
+}
+
+.header_text {
+    margin: 5px 0;
+}

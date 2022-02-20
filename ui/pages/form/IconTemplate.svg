@@ -1,0 +1,20 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 204" class="jfWizard-list-item-icon-svg" width="120" height="147">
+	<rect width="162" height="204" rx="4" fill="none">
+	</rect>
+	<rect x="9" y="9" width="144" height="46" rx="4" fill="#09F">
+	</rect>
+	<circle cx="35" cy="28" r="11" fill="#FFB629">
+	</circle>
+	<path d="M115.7 22.39L85 55h64l-28.871-32.544a3 3 0 00-4.429-.066z" fill="#9EDC36">
+	</path>
+	<path d="M89.754 29.875L66 55h50.5L94.174 29.94a3 3 0 00-4.42-.065z" fill="#78BB07">
+	</path>
+	<rect x="9" y="90" width="144" height="14" rx="7" fill="#C8C8E3">
+	</rect>
+	<rect x="9" y="137" width="144" height="14" rx="7" fill="#C8C8E3">
+	</rect>
+	<rect x="9" y="67" width="68" height="14" rx="7" fill="#E6E6F5">
+	</rect>
+	<rect x="9" y="114" width="68" height="14" rx="7" fill="#E6E6F5">
+	</rect>
+</svg>

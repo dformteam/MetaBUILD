@@ -1,0 +1,172 @@
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.content {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.welcome {
+    width: 100%;
+    height: 240px;
+    border-radius: 24px;
+    background: var(--color-background);
+    box-shadow: var(--color-boxshadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.welcome_img {
+    width: 500px;
+    height: 130px;
+}
+
+.welcome_title {
+    font-size: 68px;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.welcome_text {
+    width: 80%;
+    margin: 20px 10%;
+    text-align: center;
+}
+
+.welcome_button {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: var(--color-gradient-secondary);
+    color: var(--color-text-button);
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    cursor: pointer;
+}
+
+.welcome_button:hover > svg {
+    animation: slideOutRight 1s infinite;
+}
+
+.icon_next {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.icon_prev {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.end {
+    @extend .welcome;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.element_content {
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 24px;
+    background: var(--color-background);
+    box-shadow: var(--color-boxshadow);
+    position: relative;
+}
+
+.button_submit {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+
+.button_next {
+    flex: 1;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 18px;
+    background: var(--color-gradient-secondary-mirror);
+    color: var(--color-text-button);
+    cursor: pointer;
+    border-left: 1px solid var(--color-background);
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 0;
+}
+
+.button_next:hover > svg {
+    animation: slideOutRight 1s infinite;
+}
+
+.button_prev {
+    @extend .button_next;
+    justify-content: flex-start;
+    background: var(--color-gradient-secondary);
+    border-right: 1px solid var(--color-background);
+    border-left: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 24px;
+}
+
+.button_prev:hover > svg {
+    animation: slideOutLeft 1s infinite;
+}
+
+@keyframes slideOutRight {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        visibility: hidden;
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideOutLeft {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        visibility: hidden;
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
